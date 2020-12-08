@@ -2,7 +2,7 @@ import json
 
 defaultOptions = {
     "backgroundColor": "rgba(171, 184, 195, 1)",
-    "code": "",
+    "kode": "",
     "dropShadow": True,
     "dropShadowBlurRadius": "68px",
     "dropShadowOffsetY": "20px",
@@ -24,7 +24,7 @@ defaultOptions = {
 
 optionToQueryParam = {
     "backgroundColor": "bg",
-    "code": "code",
+    "kode": "kode",
     "dropShadow": "ds",
     "dropShadowBlurRadius": "dsblur",
     "dropShadowOffsetY": "dsyoff",
