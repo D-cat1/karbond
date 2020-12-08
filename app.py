@@ -25,7 +25,7 @@ def home():
             return jsonify({"error": "mana kodenya kakak!"})
     else:
         kode = request.args.get('kode')
-        if code is None:
+        if kode is None:
             return jsonify({"error": "mana kodenya kakak!"})
         data = request.args
     try:
