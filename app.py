@@ -9,7 +9,7 @@ import os
 import json
 
 app = Flask(__name__)
-app.secret_key = 'i_iz_noob'
+app.secret_key = 'dcat_iasd_ii'
 loop = asyncio.get_event_loop()
 CORS(app)
 
@@ -20,13 +20,13 @@ def home():
     if request.method == "POST":
         data = request.json
         try:
-            code = data['code']
+            kode = data['kode']
         except KeyError:
-            return jsonify({"error": "Code is required to create a Carbon!"})
+            return jsonify({"error": "mana kodenya kakak!"})
     else:
-        code = request.args.get('code')
+        kode = request.args.get('kode')
         if code is None:
-            return jsonify({"error": "Code is required to create a Carbon!"})
+            return jsonify({"error": "mana kodenya kakak!"})
         data = request.args
     try:
         validatedBody = utility.validateBody(data)
