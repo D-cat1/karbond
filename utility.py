@@ -62,8 +62,8 @@ ignoredOptions = [
 
 def validateBody(body_):
     validatedBody = {}
-    if not body_['code']:
-        raise Exception("code is required for creating carbon")
+    if not body_['kode']:
+        raise Exception("mana kodenya kakak!")
 
     for option in body_:
         if option in ignoredOptions:
