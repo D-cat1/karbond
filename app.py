@@ -20,11 +20,11 @@ def home():
     if request.method == "POST":
         data = request.json
         try:
-            kode = data['kode']
+            code = data['code']
         except KeyError:
             return jsonify({"error": "mana kodenya kakak!"})
     else:
-        kode = request.args.get('kode')
+        code = request.args.get('code')
         if kode is None:
             return jsonify({"error": "mana kodenya kakak!"})
         data = request.args
