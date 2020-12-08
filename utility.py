@@ -2,7 +2,7 @@ import json
 
 defaultOptions = {
     "backgroundColor": "rgba(171, 184, 195, 1)",
-    "kode": "",
+    "code": "",
     "dropShadow": True,
     "dropShadowBlurRadius": "68px",
     "dropShadowOffsetY": "20px",
@@ -24,7 +24,7 @@ defaultOptions = {
 
 optionToQueryParam = {
     "backgroundColor": "bg",
-    "kode": "kode",
+    "code": "code",
     "dropShadow": "ds",
     "dropShadowBlurRadius": "dsblur",
     "dropShadowOffsetY": "dsyoff",
@@ -62,7 +62,7 @@ ignoredOptions = [
 
 def validateBody(body_):
     validatedBody = {}
-    if not body_['kode']:
+    if not body_['code']:
         raise Exception("mana kodenya kakak!")
 
     for option in body_:
